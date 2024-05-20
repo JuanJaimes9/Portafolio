@@ -1,5 +1,5 @@
 :root{
-    --principal-color: linear-gradient(90deg,#003366, #0066CC);
+    --principal-color: linear-gradient(#003366, #0066CC);
 }
 
 *{
@@ -8,6 +8,10 @@
 
 html {
     box-sizing: border-box;
+}
+
+body{
+    background-color: #F8F9FA;
 }
 
 #nav-bar {
@@ -21,6 +25,7 @@ html {
     justify-content: space-between;
     align-items: center;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 25%);
+    z-index: 2;
 }
 
 #nav-list {
@@ -42,4 +47,102 @@ html {
 #nav-logo {
     height: 106px;
     margin-top: 5px;
+}
+
+#hero{
+    position: relative;
+    top: 100px;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+#principal-logo{
+    width: 500px;
+}
+
+#text-title{
+    position: relative;
+    bottom: 60px;
+    right: 40px;
+}
+
+#nombre-principal{
+    font-size: 71px;
+    font-weight: 600;
+    color: #003366;
+    margin: 0;
+    text-shadow: 1px 3px 5px rgba(37, 37, 37, 0.658);
+}
+
+#saludo{
+    font-size: 30px;
+    font-weight: 200;
+    color: #007BFF;
+    position: relative;
+    top: 30px
+}
+
+#frontDev{
+    font-size: 38px;
+    font-weight: 800;
+    position: relative;
+    bottom: 28px;
+    background: -webkit-linear-gradient(#037DFF,#003670);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
+}
+
+.button{
+    background: linear-gradient(#007BFF, #004A99);
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+    justify-content: space-evenly;
+}
+
+.button img{
+    width: 49px;
+    clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
+}
+
+.img-github{
+    width: 2000px;
+}
+
+
+#thing1{
+    position: relative;
+    z-index: -1;
+    bottom: 750px;
+    right: 50px;
+    transform: scaleY(-1);
+}
+#thing2{
+    position: relative;
+    z-index: -1;
+    right: 1000px;
+    bottom: 600px;
+}
+#thing3{
+    position: relative;
+    z-index: -1;
+    left: 1000px;
+    bottom: 400px;
+    transform: scaleX(-1);
+    
+}
+#thing4{
+    position: relative;
+    z-index: -1;
+    right: 1000px;
+    bottom: 700px;
 }

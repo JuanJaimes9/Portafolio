@@ -1,0 +1,45 @@
+:root{
+    --principal-color: linear-gradient(90deg,#003366, #0066CC);
+}
+
+*{
+    font-family: Poppins, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 102px;
+    display: flex;
+    background: var(--principal-color);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 25%);
+}
+
+#nav-list {
+    display: flex;
+    padding-right: 5vh;
+}
+
+.list-item {
+    list-style: none;
+    padding-left: 35px;
+}
+
+.list-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#nav-logo {
+    height: 106px;
+    margin-top: 5px;
+}

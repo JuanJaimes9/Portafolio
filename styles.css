@@ -1,6 +1,9 @@
 :root{
-    --principal-color: linear-gradient(#003366, #0066CC);
+    --principal-color-light: linear-gradient(#003366, #0066CC);
+    --secondary-color-light: #007BFF;
 }
+
+/* SELECTORES GENERALES */
 
 *{
     font-family: Poppins, sans-serif;
@@ -8,11 +11,56 @@
 
 html {
     box-sizing: border-box;
+
 }
 
 body{
     background-color: #F8F9FA;
+
 }
+
+h2{
+    font-weight: 700;
+    background: -webkit-linear-gradient(#037DFF,#003670);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 35px;
+    color: var(--secondary-color-light);
+}
+
+/* VECTORES DE FONDO */
+
+#thing1{
+    position: relative;
+    left: -1vw;
+    bottom: 75vh;
+    transform: scaleY(-1);
+}
+#thing2{
+    position: relative;
+    bottom: 60vh;
+    right: 55vw;
+}
+#thing3{
+    position: relative;
+    left: 48.4vw;
+    bottom: 40vh;
+    transform: scaleX(-1);
+}
+#thing4{
+    position: relative;
+    bottom: 70vh;
+    right: 58vw;
+}
+
+
+
+/* BARRA DE NAVEGACIÓN */
 
 #nav-bar {
     position: fixed;
@@ -21,7 +69,7 @@ body{
     width: 100%;
     height: 102px;
     display: flex;
-    background: var(--principal-color);
+    background: var(--principal-color-light);
     justify-content: space-between;
     align-items: center;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 25%);
@@ -35,23 +83,37 @@ body{
 
 .list-item {
     list-style: none;
-    padding-left: 35px;
+
 }
 
 .list-item a {
     color: #fff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
+    margin: 50px 30px 50px 0;
+    padding: 30px 30px;
+    border-radius: 15px;
+    transition: color 0.3s ease, background-color 0.3s  ease;
 }
+
+.list-item a:hover{
+    background-color: #d9d9d9c4;
+    color: #003366;
+    font-weight: 500;
+}
+
 
 #nav-logo {
     height: 106px;
     margin-top: 5px;
 }
 
+/* COVER */
+
 #hero{
     position: relative;
     top: 100px;
+    width: 90%;
 }
 
 #title{
@@ -59,11 +121,11 @@ body{
     align-items: center;
     justify-content: center;
     height: 90vh;
-    width: 100vw;
+    width: 100%;
 }
 
 #principal-logo{
-    width: 500px;
+    width: 25vw;
 }
 
 #text-title{
@@ -96,53 +158,65 @@ body{
     background: -webkit-linear-gradient(#037DFF,#003670);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: tomato;
+
 }
 
-.button{
-    background: linear-gradient(#007BFF, #004A99);
+.container-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button {
+    background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 74, 153, 0.8));
     text-decoration: none;
     color: white;
     display: inline-flex;
     align-items: center;
     padding: 0 5px;
     justify-content: space-evenly;
+    border-radius: 5px;
+    max-width: 128px;
+    position: relative;
+    bottom: 20px;
+    padding-right: 10px;
+    margin-right: 20px;
+    max-height: 40px;
+    width: 130px;
+    text-align: end;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 25%);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
 }
 
-.button img{
+.button img {
     width: 49px;
-    clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
+    padding-right: 5px;
+    opacity: 0.8;
 }
 
-.img-github{
-    width: 2000px;
+.button img.img-github {
+    width: 74px;
+    padding: 0;
+}
+
+.button:hover {
+    background: linear-gradient(rgba(0, 74, 153, 0.8), rgba(0, 123, 255, 0.8));
+    box-shadow: 6px 7px 7px rgba(0, 0, 0, 35%);
+    transform: translateY(-3px);
+}
+
+.icon-container {
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+    object-fit:fill
 }
 
 
-#thing1{
-    position: relative;
-    z-index: -1;
-    bottom: 750px;
-    right: 50px;
-    transform: scaleY(-1);
-}
-#thing2{
-    position: relative;
-    z-index: -1;
-    right: 1000px;
-    bottom: 600px;
-}
-#thing3{
-    position: relative;
-    z-index: -1;
-    left: 1000px;
-    bottom: 400px;
-    transform: scaleX(-1);
-    
-}
-#thing4{
-    position: relative;
-    z-index: -1;
-    right: 1000px;
-    bottom: 700px;
+
+
+/* CONÓCEME */
+
+#sobre-mi{
+    display: grid;
 }

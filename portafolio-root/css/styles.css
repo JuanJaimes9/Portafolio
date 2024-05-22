@@ -20,10 +20,10 @@ html {
 
 }
 
-body{
+main, body{
     background-color: var(--background-color-light);
     overflow-x: hidden;
-    
+    width: 100%;
 }
 
 h2{
@@ -273,7 +273,7 @@ section.visible {
     align-items: center;
     justify-content: center;
     height: 90vh;
-    margin: 10vh 2vw;
+    margin: 10vh 5vw;
 }
 
 .conoceme-section {
@@ -327,19 +327,20 @@ li span{
 
 #thing6{
     position: relative;
-    top: 40vh
+    top: 42vh;
+    right: 12vw
 }
 
 #thing7{
     position: relative;
     bottom: 40vh;
-    right: 52vw;
+    right: 62vw;
 }
 
 #thing8{
     position: relative;
-    bottom: 45vh;
-    right: 73vw;
+    right: 10vw;
+    bottom: 50vh;
 }
 
 

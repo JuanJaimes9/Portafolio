@@ -282,7 +282,7 @@ section.visible {
 }
 
 #conoceme-logo{
-    width: 20vw;
+    width: 15vw;
 }
 
 .conoceme{
@@ -297,6 +297,8 @@ section.visible {
     margin: 0px 60px;
     text-align: justify;
     font-size: 22px;
+    position: relative;
+    bottom: 5vh;
 }
 
 .izquierda{
@@ -327,7 +329,7 @@ li span{
 
 #thing6{
     position: relative;
-    top: 42vh;
+    top: 35vh;
     right: 12vw
 }
 
@@ -469,19 +471,19 @@ button:hover {
 #thing11{
     position: relative;
     left: 25vw;
-    top: 50vh
+    top: 45vh
 }
 
 #thing12{
     position: relative;
     left: 70vw;
-    top: 45vh;
+    top: 40vh;
 }
 
 .gracias-text{
     position: relative;
     margin-left: 50px;
-    bottom: 20vh;
+    bottom: 25vh;
     line-height: 10px;
     font-size: 1.3rem;
     font-style: italic;

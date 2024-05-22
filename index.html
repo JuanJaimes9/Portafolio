@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan D. Jaimes</title>
+    
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <img src="/assets/juanjaimes.dev.png" alt="Logo de Juan Diego Jaimes">
+    </div>
+    <header>
+        <!--BARRA DE NAVEGACIÓN-->
+        <nav id="nav-bar">
+            <img id="nav-logo" src="/assets/juanjaimes.dev.png">
+            <ul id="nav-list">
+                <li class="list-item"><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="list-item"><a href="#">Proyectos</a></li>
+                <li class="list-item"><a href="#">Habilidades</a></li>
+                <li class="list-item"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--HERO-->
+        <section id="hero" class="hidden">
+            <div id="title">
+                <div id="main-logo">
+                    <img src="/assets/Group 1.svg" id="principal-logo">
+                </div>   
+                <div id="text-title">        
+                    <span id="saludo">Hola, soy</span>
+                    <h1 id="nombre-principal">Juan D. Jaimes</h1>
+                    <span id="frontDev">Front-End dev</span>
+                    <div class="container-buttons">
+                        <a target="_blank" href="https://github.com/JuanJaimes9" class="button"><span class="icon-container"><img class="img-github" src="/assets/icons8-github.svg" alt="github"></span>GitHub</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/juanjaimes99/" class="button"><span class="icon-container"><img class="img-linkedin" src="/assets/icons8-linkedin.svg" alt="linkedin"></span>LinkedIn</a>
+                        <a target="_blank" href="#" class="button cv"><span class="icon-container"><img class="img-cv" src="/assets/download.svg" alt="cv"></span>CV PDF</a>
+                    </div>
+                </div>
+                
+            </div>
+        
+        <div class="background-things">
+            <img id="thing1" src="/assets/Vector.svg" alt="W1">
+            <img id="thing2" src="/assets/Vector L.svg" alt="L1">
+            <img id="thing3" src="/assets/Vector.svg" alt="W2">
+            <img id="thing4" src="/assets/Vector L.svg" alt="L2">
+        </div>
+        </section>
+
+        <!--SOBRE MI -->
+        <section id="sobre-mi" class="hidden">
+            <div class="conoceme-section">
+                <img src="/assets/Group 1.svg" id="conoceme-logo">
+                <h2 class="subtitulo conoceme">Conóceme</h2>
+            </div>
+            <div class="texto-conoceme">
+                <div class="info izquierda">
+                    <p>¡Hola! Soy <span class="conoceme-nombre">Juan Diego Jaimes</span>, un desarrollador web apasionado por la tecnología. Tengo experiencia en HTML, CSS y JavaScript, y me dedico a crear soluciones digitales elegantes y funcionales.</p>
+                    <h3 class="subtitulo trayectoria">Mi Trayectoria</h3>
+                    <p>Desde que descubrí la programación, he estado comprometido en aprender y mejorar constantemente. Actualmente, perfecciono mis habilidades en tecnologías front-end y exploro nuevas tendencias en desarrollo web. Me enorgullece ser autodidacta y siempre busco nuevas oportunidades para aplicar mis conocimientos en proyectos reales.</p>
+                </div>
+                <div class="info derecha">
+                    <h3 class="subtitulo define">Lo que me define:</h3>
+                    <ul>
+                        <li><span>Creatividad y diseño: </span>Me encanta transformar ideas en interfaces visualmente atractivas y fáciles de usar</li>
+                        <li><span>Solución de Problemas: </span>Disfruto enfrentándome a desafíos técnicos y encontrando soluciones tanto eficientes como efectivas.</li>
+                        <li><span>Colaboración y comunicación: </span>Valoro el trabajo en equipo y creo que una comunicación clara es esencial para el éxito de cualquier proyecto.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="background-things">
+                <img id="thing5" src="/assets/Vector.svg" alt="W1">
+                <img id="thing6" src="/assets/Vector.svg" alt="W2">
+                <img id="thing7" src="/assets/Vector L.svg" alt="L1">
+                <img id="thing8" src="/assets/Vector L.svg" alt="L2">
+            </div>
+            
+        </section>
+
+
+
+
+
+        <!--CONTACTO-->
+        <section id="contacto" class="hidden">
+            <div class="contacto izquierda">
+            <h2 id="trabajemos-juntos">Trabajemos juntos</h2>
+            <div class="container-buttons2">
+                <a target="_blank" href="https://github.com/JuanJaimes9" class="button"><span class="icon-container"><img class="img-github" src="/assets/icons8-github.svg" alt="github"></span>GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/juanjaimes99/" class="button"><span class="icon-container"><img class="img-linkedin" src="/assets/icons8-linkedin.svg" alt="linkedin"></span>LinkedIn</a>
+                <a target="_blank" href="#" class="button cv"><span class="icon-container"><img class="img-cv" src="/assets/download.svg" alt="cv"></span>CV PDF</a>
+            </div>
+        </div>
+            <div class="contacto-derecha">
+            <h2 class="subtitulo-contacto">Déjame tu contacto</h2>
+            <form class="form-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">E-mail:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Déjame un mensaje</label>
+                <textarea id="mensaje" name="mensaje"  rows="6"></textarea>
+
+                <button type="submit"><img src="/assets/icons8-enviar-90.png" alt="enviar">Enviar</button>
+            </form>
+        </div>
+        <div class="background-things">
+            <img id="thing9" src="/assets/Vector.svg" alt="W1">
+            <img id="thing10" src="/assets/Vector.svg" alt="W2">
+            <img id="thing11" src="/assets/Vector L.svg" alt="L1">
+            <img id="thing12" src="/assets/Vector L.svg" alt="L2">
+        </div>
+        </section>
+        <section class="gracias-text hidden">
+            Gracias por tomarte el tiempo de conocer mi trabajo. 
+            <p>Estoy emocionado por las oportunidades que nos esperan.</p>
+        </section>
+
+    </main>
+    
+</body>
+
+<script src="/script/script.js"></script>
+</html>
